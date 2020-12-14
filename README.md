@@ -29,7 +29,7 @@ Programming is done with the Energia IDE (http://www.energia.nu), an Arduino IDE
 
 ### Voltage reduction, reset circuit, LED resistor
 
-After programming with the arduino sketch *IKEA-morse-temp.ino*, test the function on the TI launchpad and adjust the parameters to your needs. Then the controller chip is removed and some extra parts are soldered to the pins:
+After programming with the arduino sketch *IKEA-morse-temp.ino*, test the function on the TI launchpad (https://www.ti.com/tool/MSP-EXP430G2) and adjust the parameters to your needs. Then the controller chip is removed and some extra parts are soldered to the pins:
 
 * There are three 1.5V AA batteries in the base giving 4.5V. This is too much for the MSP430 chip, a diode (1N4148) is added on the *Vcc* rail. The voltage drop across the diode is about 0.7V, so for the MSP430 are about 3.8V left. This is out of spec, but works fine for me... Or you can just use two batteries.
 
@@ -51,7 +51,7 @@ Base, with reflector, LED in center
 
 ### Putting it together, dead bug style
 
-After the reflector is removed, there are some compartments visible in the base part. The soldered circuit can be squeezed into one of them in *dead bug* style and connected to the battery and switch. 
+After the reflector is removed, there are some compartments accesible in the base part. The circuit can be squeezed into one of them in *dead bug* style and soldered to the battery, switch and LED. 
 
 <img src="assets/dead-bug.jpg" width=600>
 
@@ -68,3 +68,4 @@ Links
 * https://www.ti.com/lit/ds/symlink/msp430g2231.pdf
 * https://energia.nu/
 * https://en.wikipedia.org/wiki/Morse_code
+* https://www.ti.com/tool/MSP-EXP430G2
